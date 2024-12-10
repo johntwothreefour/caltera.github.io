@@ -30,7 +30,7 @@ img#dice.diceRolling {
   100% { transform: rotate(360deg); }
 }
 
-/* Optional: For better visualization, show the dice roll result */
+/* For better visualization */
 #diceResult {
   margin-top: 20px;
   font-size: 18px;
