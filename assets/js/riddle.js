@@ -1,9 +1,9 @@
 // Define a pool of riddles and their answers
 const riddles = [
-    { question: "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?", answer: "echo" },
-    { question: "The more you take, the more you leave behind. What am I?", answer: "footsteps" },
-    { question: "I fly without wings, I cry without eyes. Whenever I go, darkness flies. What am I?", answer: "cloud" },
-    { question: "I am always ahead of you, yet how come you never see me?", answer: "the future" }
+    { question: "I am never ending hunger - My fury, blistering heat. I do not what a touch might feel like, but in darkness I make shadows retreat.", answer: "fire" },
+    { question: "I am inevitable. All things must one day succumb to me, from small birds, to foul beasts. Neither stone nor steel can prolong and resist. Your deaths I will claim without fail, I insist.", answer: "time" },
+    { question: "I soar the skies, wingless... I cry without eyes. Whenever, wherever I may go, darkness surely arrives", answer: "cloud" },
+    { question: "Neither friend, nor foe. You will never truly know. Though I am always ahead of you, you never can see me... can you?", answer: "future" }
 ];
 
 // Select a random riddle from the pool
@@ -15,7 +15,7 @@ document.getElementById('submit-answer').addEventListener('click', () => {
     const userAnswer = document.getElementById('answer').value.trim().toLowerCase();
     
     if (userAnswer === randomRiddle.answer) {
-        alert("You pass the test!");
+        alert("The wall on the opposite side, slowly slide open as light streams in... You pass the test!");
     } else {
         alert("You feel a slight tremble in the room... The ceiling is caving in... You have failed!");
     }
