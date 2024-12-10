@@ -56,6 +56,16 @@
 									</p>
 								</section>
 
+								<section id="diceRoll">
+									<h2>Roll a 20-Sided Dice!</h2>
+									<button id="rollButton">Roll Dice</button>
+									<div id="diceContainer">
+										<!-- image of the dice -->
+										<img id="dice" src="images/blank20.png" alt="Rolling Dice" class="dice">
+									</div>
+									<p id="diceResult">Roll the dice to see the result.</p>
+								</section>
+
 							</div>
 							<div class="col-4 col-6-medium col-12-small">
 
@@ -106,32 +116,17 @@
 							<div class="col-6 col-12-medium">
 
 								<section>
-									
-									<section id="diceRoll">
-										<h2>Roll a 20-Sided Dice!</h2>
-										<button id="rollButton">Roll Dice</button>
-										<div id="diceContainer">
-											<!-- image of the dice -->
-											<img id="dice" src="images/blank20.png" alt="Rolling Dice" class="dice">
-										</div>
-										<p id="diceResult">Roll the dice to see the result.</p>
-									</section>
-
-
-									<div class="comment-box">
-										<h2>Interested in our next Campaign?</h2>
-										<form id="questionForm" action="send_email.php" method="POST">
-											<label for="email">Your Email:</label>
-											<input type="email" id="email" name="email" placeholder="Your email address" required>
-											
-											<label for="message">Next Campaign: The Blood Throne</label>
-											<textarea id="message" name="message" placeholder="Introduce yourself to me! " required></textarea>
-											
-											<button type="submit">Submit</button>
-										</form>
+									<h2>	</h2>
+									<h2>Challenge yourself to an in-game scenario!</h2>	
+									<p>You and your party fall into a trap and fall unconscious... You awake, not knowing how long you 
+										blacked out. The room is pitch dark, but each wall is not too far from it's opposition.
+									</p>
+									<p>You approach one of the room's sides, and feel words engraved on the wall... It reads: </p>
+									<div class="riddle-box">
+										<h2 id="riddle"></h2>
+										<input type="text" id="answer" placeholder="Your answer out loud...">
+										<button id="submit-answer">Submit</button>
 									</div>
-								</section>
-
 							</div>
 							<div class="col-6 col-12-medium">
 
@@ -167,6 +162,7 @@
 		<!-- Scripts -->
 			<script src="assets/js/d20script.js"></script> <!-- for dice rolling -->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/riddle.js"></script>
 
 	</body>
 </html>
