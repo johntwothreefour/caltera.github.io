@@ -1,4 +1,4 @@
-// Define a pool of riddles and their answers
+// pool of riddles and corres answers
 const riddles = [
     { question: "I am never ending hunger - My fury, blistering heat. I do not know what a touch might feel like, but in darkness I make shadows retreat.", answer: "fire" },
     { question: "I am inevitable. All things must one day succumb to me, from small birds, to foul beasts. Neither stone nor steel can prolong or resist. Your deaths I will claim without fail, I insist.", answer: "time" },
@@ -6,11 +6,11 @@ const riddles = [
     { question: "Neither friend, nor foe. You will never truly know. Though I am always ahead and always true, you never can see me... can you?", answer: "future" }
 ];
 
-// Select a random riddle from the pool
+// select random riddle
 const randomRiddle = riddles[Math.floor(Math.random() * riddles.length)];
 document.getElementById('riddle').textContent = randomRiddle.question;
 
-// Handle the answer submission
+// reposnse
 document.getElementById('submit-answer').addEventListener('click', () => {
     const userAnswer = document.getElementById('answer').value.trim().toLowerCase();
     
